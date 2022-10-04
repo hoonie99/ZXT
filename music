@@ -388,11 +388,11 @@ body
             </div>
             <div id="player-content">
                 <div id="album-art">
-                    <img src="https://i.pinimg.com/736x/94/dd/e1/94dde1ac061851a9bd525755457f26f0.jpg" class="active" id="_1">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg" id="_2">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg" id="_3">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg" id="_4">
-                    <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg" id="_5">
+                    <img src="https://raw.githubusercontent.com/hoonie99/ZXT/main/Dawanggongyuan.jpg" class="active" id="_1">
+                    <img src="https://raw.githubusercontent.com/hoonie99/ZXT/main/Juziqishui.jpg" id="_2">
+                    <img src="https://raw.githubusercontent.com/hoonie99/ZXT/main/Xindongxiaji.jpg" id="_3">
+                    <img src="https://raw.githubusercontent.com/hoonie99/ZXT/main/Fengtingwoshuohua.jpg" id="_4">
+                    <img src="https://raw.githubusercontent.com/hoonie99/ZXT/main/Bingzhenguodexiatian.jpg" id="_5">
                     <div id="buffer-box">Buffering ...</div>
                 </div>
                 <div id="player-controls">
@@ -423,7 +423,7 @@ body
   <script type="text/javascript">
     $(function()
 {
-    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['my magic shop','Me & You','Electro Boy','Home','Proxy (Original Mix)'], trackNames = ['you gave me the best of me','Alex Skrindo - Me & You','Kaaze - Electro Boy','Jordan Schor - Home','Martin Garrix - Proxy'], albumArtworks = ['_1','_2','_3','_4','_5'], trackUrl = ['https://raw.githubusercontent.com/saeju29/musicplayer/main/magicshop.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3','https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('i'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['大望公园','橘子汽水','心动夏悸','风听我说话','冰镇过的夏天'], trackNames = ['大望公园 - 张星特','橘子汽水 - 张星特','心动夏悸 - 张星特','风听我说话 - 张星特','冰镇过的夏天 - 张星特'], albumArtworks = ['_1','_2','_3','_4','_5'], trackUrl = ['https://github.com/hoonie99/ZXT/blob/main/%E5%BC%A0%E6%98%9F%E7%89%B9%20-%20%E5%A4%A7%E6%9C%9B%E5%85%AC%E5%9B%AD.mp3?raw=true','https://github.com/hoonie99/ZXT/blob/main/%E6%A9%98%E5%AD%90%E6%B1%BD%E6%B0%B4.mp3?raw=true','https://github.com/hoonie99/ZXT/blob/main/%E5%BF%83%E5%8A%A8%E5%A4%8F%E6%82%B8.mp3?raw=true','https://github.com/hoonie99/ZXT/blob/main/%E5%BC%A0%E6%98%9F%E7%89%B9%20-%20%E9%A3%8E%E5%90%AC%E6%88%91%E8%AF%B4%E8%AF%9D.mp3?raw=true','https://github.com/hoonie99/ZXT/blob/main/%E5%BC%A0%E6%98%9F%E7%89%B9%20-%20%E5%86%B0%E9%95%87%E8%BF%87%E7%9A%84%E5%A4%8F%E5%A4%A9.mp3?raw=true'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
 
     function playPause()
     {
